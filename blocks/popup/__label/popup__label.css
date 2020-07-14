@@ -1,0 +1,28 @@
+.popup__label {
+  color: black;
+  margin-top: 2.125rem;
+  margin-left: 2.25rem;
+  margin-right: 4rem;
+  margin-bottom: 3rem;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+
+@media screen and (max-width: 650px) {
+  .popup__label {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin-left: 1.5rem;
+    margin-right: 3rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .popup__label {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+  }
+}

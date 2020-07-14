@@ -1,0 +1,40 @@
+.popup__info {
+    margin-left: 2.25rem;
+    max-width: 22.375rem;
+    min-width: 22.375rem;
+    margin-right: 2.25rem;
+    margin-bottom: 1.85rem;
+    padding-bottom: 0.8rem;
+    color: black;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+    border: none;
+    border-bottom: rgba(0,0,0,0.2) 1px solid;
+  }
+
+
+
+  .popup__info::placeholder {
+    color: black;
+  }
+
+  @media screen and (max-width: 650px) {
+    .popup__info {
+      max-width: 15rem;
+      min-width: 13rem;
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  @media screen and (max-width: 300px) {
+    .popup__info {
+      margin-right: 1.5rem;
+      margin-left: 1.5rem;
+      max-width: 13rem;
+      min-width: 10rem;
+    }
+  }

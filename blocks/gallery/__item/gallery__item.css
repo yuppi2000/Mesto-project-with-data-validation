@@ -1,0 +1,11 @@
+.gallery__item {
+  background-color: white;
+  border-radius: 10px;
+  max-width: 17.625rem;
+  cursor: pointer;
+  margin: auto;
+  max-width: 17.625rem;
+  max-height: 22.5rem;
+  position: relative;
+}
+

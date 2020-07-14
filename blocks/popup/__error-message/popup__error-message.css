@@ -1,0 +1,16 @@
+.popup__error-message {
+  margin-left: 2.25rem;
+  margin-top: -1.7rem;
+  min-height: 1.875rem;
+  max-width: 22.375rem;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #ff0000;
+  word-break: break-all;
+  opacity: 0;
+  visibility: hidden;
+  transition: .1s opacity, .1s visibility ease-in;
+}

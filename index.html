@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mesto</title>
+  <link rel="stylesheet" href="./pages/index.css">
+</head>
+<body>
+<div class="page">
+<header class="header">
+  <a class="header__link" href="#"><img class="header__logo" src="./images/logo.svg" alt="лого"></a>
+</header>
+<main class="content">
+  <section class="profile">
+    <div class="profile__user">
+    <img src="./images/userpic.jpg" alt="юзерпик" class="profile__userpic">
+    <div class="profile__info">
+      <div class="profile__edit-name">
+      <h1 class="profile__name">Жак-Ив Кусто</h1>
+      <button class="profile__edit-btn" type="button" aria-label="edit">
+        <img class="profile__edit-btn-image" src="./images/Vector.svg" alt="редактиовать">
+      </button></div>
+      <p class="profile__job">Исследователь океана</p>
+    </div></div>
+    <button class="profile__add-btn" type="button" aria-label="add">
+      <img src="./images/Add.svg" alt="добавить" class="profile__add-btn-image">
+    </button>
+  </section>
+  <section class="gallery">
+  <div class="gallery__container">
+
+  </div>
+  </section>
+  <div class="popup">
+    <form class="popup__form" action="#" method="POST" name="popup__form" novalidate>
+      <h2 class="popup__label">Редактировать профиль</h2>
+      <input type="text" class="popup__info popup__info_name" id="name" value=" " required minlength="2" maxlength="40" pattern="[A-Za-zА-ЯЁа-яё -]{1,}">
+      <span class="popup__error-message" id="name-error-message"></span>
+      <input type="text" class="popup__info popup__info_job" id="job" value=" " required minlength="2" maxlength="200">
+      <span class="popup__error-message" id="job-error-message"></span>
+      <button type="submit" class="popup__save">Сохранить</button>
+        <button type="button" class="popup__close" aria-label="close"><img class="popup__close-image" src="./images/Close.svg" alt="закрыть"></button>
+      </form>
+  </div>
+  <div class="popup popup-add-card">
+    <form class="popup__form popup-add-card__form" action="#" method="POST" name="popup-add-card__form" novalidate>
+      <h2 class="popup__label popup-add-card__label">Новое место</h2>
+      <input type="text" class="popup__info popup__info_name popup-add-card__info popup-add-card__info_name" id="addCard_name" required placeholder="Название" minlength="1" maxlength="30">
+      <span class="popup__error-message" id="addCard_name-error-message"></span>
+      <input type="url" class="popup__info popup__info_link popup-add-card__info popup-add-card__info_link" id="addCard_link" required placeholder="Ссылка на картинку">
+      <span class="popup__error-message" id="addCard_link-error-message"></span>
+      <button type="submit" class="popup__save popup-add-card__save">Создать</button>
+      <button type="button" class="popup__close popup-add-card__close" aria-label="close"><img class="popup-add-card__close-image" src="./images/Close.svg" alt="закрыть"></button>
+      </form>
+  </div>
+  <section class="popup popup_picture_big">
+    <div class="popup__image-container">
+      <img src="" alt="большое изображение" class="popup__big-image">
+      <button type="button" class="popup__image-close" aria-label="close">
+        <img class="popup__close-image" src="./images/Close.svg" alt="закрыть">
+      </button>
+      <p class="popup__image-title"></p>
+    </div>
+  </section>
+</main>
+<footer  class="footer">
+  <p class="footer__copyright">&copy; 2020. Mesto Russia</p>
+</footer>
+
+<template class="gallery__template" id="gallery__template">
+  <div class="gallery__item">
+    <img alt="картинка места" class="gallery__image">
+    <button class="gallery__delete" type="button" aria-label="delete">
+    </button>
+    <div class="gallery__info">
+      <p class="gallery__title"></p>
+      <button type="button" class="gallery__link" aria-label="like"></button>
+    </div>
+  </div>
+</template>
+</div>
+<script src="./js/initialCards.js"></script>
+<script src="./js/validate.js"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>

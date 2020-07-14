@@ -1,0 +1,16 @@
+.gallery__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17.625rem, 1fr) );
+    grid-template-rows: repeat(2, minmax(22.5rem, 1fr));
+    padding: 0;
+    margin: 0 auto;
+    max-width: 55.125rem;
+    grid-gap: 1rem;
+
+  }
+
+  @media screen and (max-width: 618px) {
+    .gallery__container {
+      grid-gap: 1.25rem;
+    }
+  }

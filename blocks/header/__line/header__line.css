@@ -1,0 +1,7 @@
+.header__line {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 882px;
+  min-width: 200px;
+}

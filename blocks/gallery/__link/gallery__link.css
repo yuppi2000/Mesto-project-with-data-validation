@@ -1,0 +1,14 @@
+.gallery__link {
+  border: none;
+  background: url(../../../images/like.svg) center no-repeat;
+  display: flex;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  text-align: center;
+}
+
+.gallery__link:hover {
+  opacity: 0.5;
+}

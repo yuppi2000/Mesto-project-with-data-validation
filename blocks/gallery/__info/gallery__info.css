@@ -1,0 +1,7 @@
+.gallery__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 15.3rem;
+  margin: auto;
+}
